@@ -1,0 +1,275 @@
+/* google barlow font link here ***********************************************/
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap');
+
+/* common css here ******************************************/
+body{
+    font-family: 'Barlow', sans-serif;
+    line-height: 1.7;
+    color: #516171;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: 700;
+}
+:root{
+    --dark-color:#092032;
+    --Red-Orange:#ff4d29;
+    --white-color:#ffffff;
+}
+
+a{
+    color: var(--dark-color);
+    text-decoration: none;
+    transition: all 0.42s ease-in;
+}
+
+ul, li{
+    list-style: none;
+}
+
+img{
+    width: 100%;
+}
+
+.row{
+    display: flex;
+    width: 100%;
+}
+.container{
+    max-width: 1140px;
+    margin: auto;
+    padding: 0 2%;
+}
+
+
+
+
+
+
+
+
+/* TOP NAV-BAR HERE **************************************************************/
+.top-navbar{
+    background-color: var(--Red-Orange);
+    padding: 2px 0;
+}
+
+.top-navbar .row{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-navbar p{
+    margin: 0;
+    display: inline-block;
+    margin-right: 16px;
+    color: white;
+    font-size: 16px;
+}
+
+.top-navbar i,
+.top-navbar a{
+    vertical-align: middle;
+}
+.col-8{
+    text-align: left;
+}
+.col-4{
+    text-align: right;
+}
+.socail-links a{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #e7e7e741;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    transition: all 0.42s ease-in;
+    border-radius: 50%;
+    font-size: 16px;
+}
+
+.socail-links a:not(:last-child){
+    margin: 0 5px;
+}
+
+.socail-links a:hover{
+    background-color: var(--white-color);
+    color: var(--Red-Orange);
+} 
+
+
+
+
+
+
+
+
+/* nav-bar starts here *************************************************/
+
+#nav-bar{
+    width: 100%;
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.42s ease-in;
+}
+
+.logo:hover{
+    color: var(--Red-Orange);
+}
+
+.logo span{
+    color: var(--Red-Orange);
+}
+#nav-bar .nav-items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    
+}
+.nav-items ul{
+    margin: 0;
+    padding-left: 0 ;
+}
+
+#nav-bar .nav-items ul li{
+    display: inline-block;
+    text-align: right;
+}
+
+#nav-bar .nav-items ul li a{
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 15px;
+}
+#nav-bar .nav-items ul li a.active{
+    color: var(--Red-Orange);
+}
+
+#nav-bar .nav-items ul li a:hover{
+    color: var(--Red-Orange);
+}
+
+#nav-bar .nav-items ul li:not(:last-child){
+    margin-right: 15px;
+}
+
+
+
+
+
+/* button here (contact us) **************************************/
+#nav-bar button{
+    background-color: transparent;
+    border: none;
+    background-color: var(--Red-Orange);
+    padding: 8px 25px;
+    border-radius: 3px;
+    color: white;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 15px;
+    cursor: pointer;
+}
+#nav-bar button:hover{
+    background-color: #f82e06;
+    transition: all 0.50s ease-in;
+}
+
+
+
+/* menu icon ***************************************/
+#menu-icon{
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+}
+
+/* navbar scroll ***************************************/
+.scrolled{
+    margin-top: -35px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    z-index: 10000000;
+}
+
+
+
+
+
+/* slider-wrapper here *******************************************************/
+
+#cover{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../image/bg_banner1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 70px;
+    background-color: #25576667;
+    background-blend-mode: multiply;
+    display: flex;
+    align-items: center;
+}
+.cover-image{
+    width: 100%;
+}
+.cover-image h6{
+    text-transform: capitalize;
+    color: var(--white-color);
+    font-weight: 400;
+}
+.cover-image h1{
+    color: var(--white-color);
+    text-transform: uppercase;
+    font-size: 60px;
+}
+
+.cover-image .btn{
+    background-color: transparent;
+    border: none;
+    background-color: var(--Red-Orange);
+    padding: 8px 25px;
+    border-radius: 3px;
+    color: white;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.50s ease-in;
+}
+
+.cover-image .btn:hover{
+    background-color:#f52c04;
+}
+
+.cover-image .active{
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    margin-left: 8px;
+}
+
+.cover-image .active:hover{
+    background-color: var(--white-color);
+    color: #092032;
+    border: none;
+}
+
+
